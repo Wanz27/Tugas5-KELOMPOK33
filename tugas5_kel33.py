@@ -19,20 +19,20 @@ if age >= 18:
         else:
             print("Maaf, Anda belum cukup umur untuk ikut kuis.")        
 
+def ask_question(self, question, answer):
+        user_answer = input(question + " ").strip().capitalize()
+        if user_answer == answer:
+            print("Jawaban Anda benar!")
+            self.points += 1
+        else:
+            print("Jawaban Anda salah.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+def main():
+    quiz = Quiz()  # Membuat objek dari kelas Quiz
+    
+    # Meminta input nama dan usia dari pengguna
+    name = input("Masukkan nama Anda: ")
+    age_input = input("Masukkan usia Anda: ")
 
 try:
         age = int(age_input)  # Mengonversi input usia ke integer
