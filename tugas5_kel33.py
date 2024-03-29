@@ -34,7 +34,14 @@ if age >= 18:
 
 
 
+try:
+        age = int(age_input)  # Mengonversi input usia ke integer
+        quiz.participate_quiz(name, age)  # Memanggil metode untuk memeriksa apakah bisa ikut kuis
+    except ValueError:
+        print("Error! Masukkan usia dalam bentuk angka.")
 
+if _name_ == "_main_":
+    main()
 
 
 
